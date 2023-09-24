@@ -1,0 +1,32 @@
+.header {
+    padding-inline: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-primary {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    & img {
+        vertical-align: middle;
+    }
+}
+
+.header-secondary {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    & img {
+        vertical-align: middle;
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

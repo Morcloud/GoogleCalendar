@@ -1,0 +1,68 @@
+.button {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    display: inline-block;
+    font: var(--button-button);
+    text-decoration: none;
+    color: currentColor;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &.is-primary {
+        background: var(--blue10);
+        color: var(--white);
+
+        &:hover,
+        &:focus {
+            background: var(--blue30);
+        }
+    }
+
+    &.is-secondary {
+        border: 1px solid var(--gray20);
+    }
+
+    &.is-rounded {
+        border-radius: 1.25rem;
+        color: var(--blue10);
+    }
+
+    &.is-compact {
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+
+    &.is-shadowed {
+        box-shadow: 0.08734px 2.52442px 7.4963px 0px rgba(0, 0, 0, 0.07),
+            0.41288px 11.9336px 29.3037px 0px rgba(0, 0, 0, 0.04),
+            1.0719px 30.98146px 92px 0px rgba(0, 0, 0, 0.03);
+    }
+
+    &:hover,
+    &:focus,
+    &.is-secondary:hover,
+    &.is-secondary:focus,
+    &.is-rounded:hover,
+    &.is-rounded:focus,
+    &.is-compact:hover,
+    &.is-compact:focus {
+        background: var(--gray10);
+    }
+
+    & i {
+        font-size: 1.5rem;
+        color: var(---gray50);
+    }
+
+    & i,
+    & span {
+        vertical-align: middle;
+    }
+}
