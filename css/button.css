@@ -32,6 +32,17 @@
     &.is-rounded {
         border-radius: 1.25rem;
         color: var(--blue10);
+
+        &:has(i) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+
+            & i {
+                color: var(--gray50);
+            }
+        }
     }
 
     &.is-compact {

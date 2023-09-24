@@ -1,0 +1,51 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem;
+}
+
+.findUsers {
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    max-inline-size: 12.25rem;
+    background: var(--gray10);
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+
+    & input {
+        background: transparent;
+        border: none;
+
+        &::placeholder {
+            font: var(--body1-regular);
+        }
+    }
+}
+
+.myCalendars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.myCalendars-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-inline-size: 12.25rem;
+    font: var(--body1-medium);
+
+    & i {
+        font-size: 1.5rem;
+    }
+}
+
+.myCalendars-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
