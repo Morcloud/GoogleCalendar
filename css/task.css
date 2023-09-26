@@ -8,4 +8,9 @@
     gap: 0.25rem;
     border-radius: 0.25rem;
     overflow: hidden;
+
+    & p {
+        margin: 0;
+        white-space: nowrap;
+    }
 }

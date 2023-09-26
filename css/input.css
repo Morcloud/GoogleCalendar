@@ -1,0 +1,44 @@
+.input {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    &.is-outstanding {
+        & input {
+            font: var(--subtitle-subtitle1);
+        }
+    }
+
+    & i {
+        font-size: 1.5rem;
+    }
+
+    & textarea {
+        resize: none;
+    }
+
+    & input,
+    & textarea {
+        flex: 1;
+        font: var(--body1-regular);
+        padding-block: 0.625rem;
+        padding-inline: 0.75rem;
+        border: none;
+        outline: none;
+        border-radius: 0.25rem;
+
+        &:focus {
+            box-shadow: 0 2px 0 var(--blue10);
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--gray10);
+        }
+    }
+}
+
+.input-body {
+    display: flex;
+    flex: 1;
+}

@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-inline-size: 12.25rem;
+    inline-size: 12.25rem;
     font: var(--body1-medium);
 
     & i {

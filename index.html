@@ -487,5 +487,79 @@
                 </div>
             </main>
         </div>
+        <dialog class="modal">
+            <form class="createTask">
+                <div class="input is-outstanding">
+                    <div class="input-body">
+                        <input
+                            required
+                            name="title"
+                            type="text"
+                            placeholder="Añade un título"
+                        />
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="icon-clock"></i>
+                    <div class="input-body">
+                        <input required type="date" name="date" />
+                        <input required type="time" name="time-start" />
+                        <input required type="time" name="time-end" />
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="icon-users"></i>
+                    <div class="input-body">
+                        <input
+                            required
+                            list="guests"
+                            type="text"
+                            name="guests"
+                            placeholder="Agregar Invitados"
+                        />
+                        <datalist id="guests">
+                            <option value="Leonidas"></option>
+                            <option value="Carlos"></option>
+                            <option value="Miguel"></option>
+                            <option value="Sandra"></option>
+                            <option value="Cristopher"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="icon-gps"></i>
+                    <div class="input-body">
+                        <input
+                            name="location"
+                            type="text"
+                            placeholder="Agregar ubicación"
+                        />
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="icon-text"></i>
+                    <div class="input-body">
+                        <input type="file" multiple />
+                    </div>
+                </div>
+                <div class="input">
+                    <i class="icon-text"></i>
+                    <div class="input-body">
+                        <textarea
+                            name="description"
+                            placeholder="Agregar descripción"
+                            id=""
+                            cols="30"
+                            rows="2"
+                        ></textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="modal-actions">
+                <button class="button" id="close-modal">Cancelar</button>
+                <button class="button is-primary">Guardar</button>
+            </div>
+        </dialog>
+        <script src="./js/app.js" type="module"></script>
     </body>
 </html>
